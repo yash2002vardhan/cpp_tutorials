@@ -36,18 +36,11 @@ using namespace std;
 //     cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << "\n";
 //     cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << "\n";
 
-
-//     struct car{
-//         string brand;
-//         string model;
-//         int year;
-//       } myCar1, myCar2; // We can add variables by separating them with a comma here
-
 //     return 0;
 // }
 
 
-// to create names structs
+// to create named structs
 
 struct car{
     string brand;
