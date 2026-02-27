@@ -42,13 +42,29 @@ using namespace std;
 
 // usage of capture
 
+// int main() {
+//     for (int i = 1; i <= 3; i++) {
+//       auto show = [i]() { // You can use the [ ] brackets to give a lambda access to variables outside of it.
+//         cout << "Number: " << i << "\n";
+//       };
+//       show();
+//     }
+//     return 0;
+//   }
+  
+
+
 int main() {
-    for (int i = 1; i <= 3; i++) {
-      auto show = [i]() { // You can use the [ ] brackets to give a lambda access to variables outside of it.
-        cout << "Number: " << i << "\n";
-      };
-      show();
-    }
+
+    string greeting = "Hello World" ;
+    auto message = [&greeting]() { // here we are passing by reference therefore it will always get the latest value
+      cout << greeting;
+    };
+
+    greeting = "Hello yash" ;
+
+    
+  
+    message();
     return 0;
   }
-  
