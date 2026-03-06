@@ -1,4 +1,4 @@
-// same function is being used here to do different things
+// same function is being used here to do different things ; this is not runtime polymorphism as we have declared objects of classes separately
 
 #include <iostream>
 using namespace std;
